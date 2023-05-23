@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <title>e-car.com</title>
+    <link rel="shortcut icon" type="png" href="images/logo_empty.png">
+    <link rel="stylesheet" type="text/css" href="style.css"/> 
+  </head>
+
+  <body>
+    <nav>
+      <div class="menu" id="menu">
+        <ul class="menu-links">
+          <a href="#menu"><img class="logo" src="images/logo.png" alt="logo"></a>
+          <li class="menu-dropdown">
+            <div class="bouton-menu"><p>PRODUIT</p></div>
+            <div class="dropdown">
+              <a href="#presentation">Présentation du produit</a>
+              <a href="#fonctionnement">Fonctionnement</a>
+              <a href="#legale">Mentions légales</a>
+            </div>
+          </li>
+          <li class="menu-dropdown">
+            <a><div class="bouton-menu"><p>PROJET</p></div></a>
+            <div class="dropdown">
+              <a onclick=proto()>Prototype</a>
+              <a href="#section_projet">Evolution du projet</a>
+            </div>
+          </li>
+          <a href="#section_equipe"><div class="bouton-menu"><p>EQUIPE</p></div></a>
+          <a href="mailto:esteban.bleuse@esme.fr" target="blank"><div class="bouton-menu"><p>CONTACT</p></div></a>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container" id="presentation">
+      <div class="leftText">
+        <h2>E-car - Le transport du futur</h2>
+        <p>E-car est une entreprise automobile et aéronautique focalisé sur la conception et la production de véhicule modulaire. Notre dernier modèle: la <strong>tranpod</strong> peut être utilisé sur route ou se déplacer par voie aérienne pour contourner des obstacles.</p>
+        <p>La transpod a été conçu comme un moyen de transport rapide et confortable pour les clients vivant en milieux accidentés.</p> 
+      </div>
+      <div class="rightImage"><img class="cont_img" src="images/E-car-article.png"></div>
+    </div>
+
+    <h1 class="h1" id="section_equipe">L'équipe</h1>
+    <div class="teamup">
+      <div class="team_portrait"><img class="tp" src="images/ClémentC.jpg" alt="ClementC" onerror="this.src='images/anon.jpg'"ç><p>Clément Chanvalon</p><p>Directeur général</p></div>
+      <div class="team_portrait"><img class="tp" src="images/Darel.png" alt="Darel" onerror="this.src='images/anon.jpg'"><p>Darel Zoclanclounon</p><p>Recherche et Développement</p></div>
+      <div class="team_portrait"><img class="tp" src="images/Victor.png" alt="Victor" onerror="this.src='images/anon.jpg'"><p>Victor Perrier</p><p>Equipe légal</p></div>
+      <div class="team_portrait"><img class="tp" src="images/Esteban.png" alt="Esteban" onerror="this.src='images/anon.jpg'"><p>Esteban Bleuse</p><p>Lead web designer</p></div>
+    </div>
+    <div class="teamdown">
+      <div class="team_portrait"><img class="tp" src="images/Charles.png" alt="Charles" onerror="this.src='images/anon.jpg'"><p>Charles Martinez</p><p>Ressource Humaine</p></div>
+      <div class="team_portrait"><img class="tp" src="images/ClémentR.jpg" alt="ClementR" onerror="this.src='images/anon.jpg'"><p>Clément Regaudie</p><p>Recherche et Développement</p></div>
+      <div class="team_portrait"><img class="tp" src="images/Romain.png" alt="Romain" onerror="this.src='images/anon.jpg'"><p>Romain Berbain</p><p>Equipe légal</p></div>
+      <div class="team_portrait"><img class="tp" src="images/Etienne.jpg" alt=Etienne onerror="this.src='images/anon.jpg'"><p>Etienne Pech</p><p>Web designer</p></div>
+    </div>
+
+    <div class="container" id="fonctionnement">
+      <div class="leftText">
+        <h2>Description fonctionnelle du système modulaire de la capsule</h2>
+        <p>Coming soon...</p>
+      </div>
+      <div class="rightText">
+        <p>Oops! Can't reach this site.</p>
+      </div>
+    </div>
+
+    <h1 class="h1" id="section_projet">L'évolution du projet</h1>
+    <div class="projet">
+      <a onclick=projet1()><div class="projet_portrait"><div class="projet1_portrait"><p>Conception</p></div></div></a>
+      <a onclick=projet2()><div class="projet_portrait"><div class="projet2_portrait"><p>Système d'attache</p></div></div></a>
+      <a onclick=projet3()><div class="projet_portrait"><div class="projet3_portrait"><p>Les matériaux</p></div></div></a>
+      <a onclick=projet4()><div class="projet_portrait"><div class="projet4_portrait"><p>La reglementation</p></div></div></a>
+      <a onclick=projet6()><div class="projet_portrait"><div class="projet6_portrait"><p>Le code</p></div></div></a>
+    </div>
+        
+
+    <div id="proto" class="popup">
+      <button class="close-btn" onclick="closeProto()">X</button>
+      <img class="cont_img" src="images/E-car-article.png">
+      Voici notre une des représentation de notre prototype.
+    </div>
+    <div id="projet1" class="popup">
+      <button class="close-btn" onclick="closeProjet1()">X</button>
+      <h1>La conception</h1>
+      <img class="cont_img" src="images/E-car-article.png">
+      <h3>Ceci est notre prototype. Nous l'avons structuré à partir du chassie.</h3>
+      <img class="cont_img" src="images/chassie1.png">
+      <img class="cont_img" src="images/chassie2.png">
+      <h3>Maintenant passons à la modélisation de la capsule.</h3>
+      <img class="cont_img" src="images/capsule1.png">
+      <img class="cont_img" src="images/capsule2.png">
+      <img class="cont_img" src="images/capsule3.png">
+      <img class="cont_img" src="images/capsule4.png">
+      <h3>Enfin voici la modélisation du drone.</h3>
+      <img class="cont_img" src="images/drone1.jpg" alt="drone1">
+      <img class="cont_img" src="images/drone2.jpg" alt="drone2">
+      
+    </div>
+    <div id="projet2" class="popup">
+      <button class="close-btn" onclick="closeProjet2()">X</button>
+      <h1>Le Système d'Attache</h1>
+      <h3>La fixation de notre chassie à été choisie parmi plusieurs concepts pour trouver le design idéale.</h3>
+      <img class="cont_img" src="images/fix1.jpg">
+      <h3>Nous avons opté pour une fixation ressemblant à ceci:</h3>
+      <img class="cont_img" src="images/fix2.jpg">
+
+    </div>
+    <div id="projet3" class="popup">
+      <button class="close-btn" onclick="closeProjet3()">X</button>
+      <h1>Les Matériaux</h1>
+      <img class="cont_img" src="images/mat.jpg">
+      <h3>Le matériau principale pour lequel nous avons optés est une fibre naturelle à base de lin, choisie pour sa résistance et son aspect écologique.</h3>
+      <h3>Nous utilisons une structure de type <b>ampliTex</b> et <b>PowerRibs</b> afin d'optimiser la capacité de port de notre véhicule.</h3>
+      <h3>Ce procédé est déjà utilisé dans les voitures sportives et les formules 1.</h3>
+      <img class="cont_img" src="images/car.jpg">
+
+    </div>
+    <div id="projet4" class="popup">
+      <button class="close-btn" onclick="closeProjet4()">X</button>
+      <h1>La Réglementation</h1>
+      <alert>Cette page est en cours de construction.</alert>
+      <img class="cont_img" src="images/maintenance.gif">
+    </div>
+  
+    <div id="projet6" class="popup">
+      <button class="close-btn" onclick="closeProjet6()">X</button>
+      <h1>Le Code</h1>
+      Ce fichier <code>HTML</code>(HyperText Markup Language) utilise un fichier <code>java script</code> et <code>CSS</code>(Cascading Style Sheets)
+      <h2>La partie HTML</h2>
+      Voici la représentation d'une page <code>html</code>
+
+      <pre><code >
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+        
+&lt;/head&gt;
+        
+&lt;body&gt;
+        
+&lt;/body&gt;
+            
+&lt;footer&gt;
+        
+&lt;/footer&gt;
+&lt;/html&gt;
+          </code></pre>
+          Dans le <code>&lt;head&gt;</code> on insère notre <code>style.css</code> et notre <code>script.js</code>
+          <h2>La partie CSS</h2>
+          <div>On y insère toute les couleurs de cette page <code>html</code></div>
+          <div>Ci-dessous, un exemple du contenu d'un <code>style.css</code></div>
+          <pre><code>
+html{
+font-family: Tahoma, Arial, Sans-self;
+background-color: #263238;
+}
+.popup {
+display: none;
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+padding: 20px;
+background-color: #90A4AE;
+border: 1px solid #444;
+width: 80vw;
+height: 80vh;
+overflow: auto;
+border-radius: 20px;
+}
+. . .
+          </code></pre>
+          <h2>La partie JavaScript</h2>
+          On a utilisé un fichier <code>script.js</code> afin de créer une fonction pour l'ouverture et la fermeture du popup que vous êtes en train de lire.
+          <pre><code>
+function projet() {
+document.getElementById("projet").style.display = "block";
+}
+
+function closeProjet() {
+document.getElementById("projet").style.display = "none";
+}
+          </code></pre>
+    </div>
+
+    <div class="container" id="legale">
+      <div class="leftImage"><img class="cont_img" src="images/logo_empty.png"></div>
+      <div class="rightText">
+        <h2>Mentions légales</h2>
+        <p>Coming soon...</p> 
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+
+  <footer style="background-color: black;">
+
+          <p style="color: white;">&copy; 2023 Mon site Web</p>
+          <p style="color: white;"><a href="contact.html">Contact</a></p>
+          <p style="color: white;"><a href="aide.html">Aide</a></p>
+
+  </footer>
+</html>

@@ -1,0 +1,271 @@
+html{
+    font-family: Tahoma, Arial, Sans-self; /*Police d'ecriture*/
+    background-color: #263238;    /*Couleur de fond*/
+}
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #90A4AE;
+  border: 1px solid #444;
+  width: 80vw;
+  height: 80vh;
+  overflow: auto;
+  border-radius: 20px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: red;
+  color: white;
+  border: #444;
+  padding: 10px;
+  cursor: pointer;
+}
+.projet{
+	display: flex;
+	background-color: #90A4AE;
+	justify-content: space-between;
+  text-align: center;
+  border-radius: 30px;
+  padding: 2%;
+  margin-block: 20px;
+}
+.logo{
+  display: inline-block;
+  margin: 10px;
+  width: 80px;
+  height: 80px;
+  margin-top: 5px;
+  margin-left: -20px;
+}
+.bouton-menu{
+  background-color: #90A4AE;
+  color: #1B262C;
+  font-weight: bold;
+  font-size: 10pt;
+  text-align: center;
+  width: calc((100vw - 60px -2% )/5);
+  height: 60px;
+  padding: 2%;
+  margin: 10px;
+  border-radius: 20px;
+  box-shadow: 0px 10px 0px #1B262C;
+  transition-duration: 200ms;
+}
+
+.teamup{
+  
+	display: flex;
+	background-color: #90A4AE;
+	justify-content: space-around;
+  border-radius: 30px 30px 0px 0px;
+}
+.teamdown{
+	display: flex;
+	background-color: #90A4AE;
+	justify-content: space-around;
+  border-radius: 0px 0px 30px 30px;
+  margin-bottom: 60px;
+}
+.team_portrait{
+  color: #1B262C;
+  margin: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+.projet_portrait{
+	color: #1B262C;
+	margin: 20px;
+	font-weight: bold;
+	text-align: center;
+  cursor: pointer;
+}
+.container {
+  display: flex;
+  height: 500px;
+  margin-block: 60px;
+}
+.leftText {
+  flex: 1;
+  padding: 20px;
+  background-color: white;
+  border-radius: 20px 0px 0px 20px;
+}
+
+.leftImage{
+  flex: 1;
+  background-color: white;
+  /*background-repeat: no-repeat;
+  background-image: url("images/E-car-article.png");
+  background-size: auto;
+  background-position: center;*/
+  border-radius: 20px 0px 0px 20px;
+}
+
+.rightText{
+  flex: 1;
+  padding: 20px;
+  background-color: white;
+  border-radius: 0px 20px 20px 0px;
+}
+
+.rightImage {
+  flex: 1;
+  background-color: white;
+  /*background-repeat: no-repeat;
+  background-image: url("images/E-car-article.png");
+  background-size: auto;
+  background-position: center;*/
+  border-radius: 0px 20px 20px 0px;
+}
+
+.cont_img{
+  max-height: 500px;
+  size: auto;
+  position: center;
+}
+
+nav{
+    display: flex;
+}
+
+.tp{
+  max-height: 120px;
+  max-width: 120px;
+  height: 120px;
+  width: 120px;
+  border: solid;
+  border-color: #1B262C;
+  border-width: 4px;
+  border-radius: 50%;
+}
+.h1{
+  color: #f1f1f1;
+}
+
+
+
+
+.menu{
+    display: flex;
+}
+
+
+.menu-links {
+    list-style-type: none;
+    display: flex;
+  }
+.menu-links li.menu-dropdown {
+    position: relative;
+  }
+  
+.bouton-menu:hover{
+    box-shadow: none;
+    transition-duration: 600ms;
+
+}
+.bouton-menu:active{
+  color:pink
+}
+.menu-links li a {
+    display: block;
+    text-decoration: none;
+    color: #444;
+    font-weight: 700;
+    transition: 0.4s all;
+  }
+  .menu-links li a:hover {
+    color: #ff3f34;
+    font-size: large;
+}
+.menu-links li.menu-dropdown:hover .dropdown {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
+  }
+.menu-links li.menu-dropdown .dropdown {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    padding: 20px 0;
+    top: 100%;
+    transform: translateY(-50px);
+    left: 0;
+    width: 20vw;
+    background-color: #90A4AE;
+    box-shadow: 0px 10px 10px 3px rgba(0, 0, 0, 0.3);
+    
+    border-radius: 3px 0px 3px 0px;
+    z-index: 111;
+    transition: 0.4s all;
+    border-radius: 20px;
+    margin: 10px;
+    text-align:center;
+  }
+.menu-links li.menu-dropdown .dropdown a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 400;
+  }
+
+
+pre {
+  counter-reset: line;
+}
+pre code {
+  display: block;
+  white-space: pre;
+  color: white; /* Texte en blanc */
+  background-color: black; /* Fond noir */
+  padding: 10px;
+  border: 1px solid black; /* Contour noir de 1px */
+  border-radius: 20px;
+}
+
+
+#target-element {
+  font-weight: bold;
+}
+code {
+  font-size: 12pt;
+}
+.projet1_portrait:hover {
+  transition: 5ms;
+  color: red;
+}
+.projet2_portrait:hover {
+  transition: 5ms;
+  color: red;
+}
+.projet3_portrait:hover {
+  transition: 5ms;
+  color: red;
+}
+.projet4_portrait:hover {
+  transition: 5ms;
+  color: red;
+}
+.projet5_portrait:hover {
+  transition: 5ms;
+  color: red;
+}
+.projet6_portrait:hover {
+  transition: 5ms;
+  color: red;
+}
+#proto {
+  text-align: center;
+}
+.alert{
+  color:red
+}
+footer{
+  text-align: center;
+  
+}
